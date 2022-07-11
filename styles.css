@@ -1,0 +1,844 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+:root {
+    --primary: #E84129;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button hover Starts */
+.prm-btn,
+.prm-btn:before,
+.prm-btn:after {
+    transition: 0.5s ease-in-out;
+}
+
+.prm-btn {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+    border: 1px solid var(--primary);
+    font-weight: 700;
+}
+
+.prm-btn:before,
+.prm-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.prm-btn:before {
+    right: -50px;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #fff;
+    transform: translateX(-100%);
+}
+
+.prm-btn:after {
+    left: -50px;
+    border-left: 50px solid transparent;
+    border-top: 80px solid #fff;
+    transform: translateX(100%);
+}
+
+.prm-btn:hover {
+    color: var(--primary) !important;
+    border: 1px solid var(--primary);
+}
+
+.prm-btn:hover:before {
+    transform: translateX(-49%);
+}
+
+.prm-btn:hover:after {
+    transform: translateX(49%);
+}
+
+/* Button hover Ends*/
+
+
+/*HAMBURGER START*/
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner {
+    background-color: #000;
+}
+
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #000;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.hamburger--spin .hamburger-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+
+.hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+    transform: rotate(225deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*HAMBURGER ENDS*/
+
+
+/* Header Starts */
+.upr-strip {
+    background: #111;
+    color: #fff;
+    padding: 5px 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.upr-nav {
+    padding: 20px 0;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.search-bar input {
+    min-width: 350px;
+    height: 45px;
+    padding: 0 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 0 10px;
+    height: 50px;
+    border: 1px solid #ddd;
+}
+
+input.search-term:focus-within {
+    outline: none;
+}
+
+.search-bar button {
+    height: 50px;
+    width: 50px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.cart-profile {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    margin-right: 15px;
+}
+
+.hamburger {
+    display: none
+}
+
+.mobile-nav {
+    transition: all linear .25s;
+    height: 0;
+    display: block !important;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.mobile-nav.nav-show {
+    transition: all linear .25s;
+    height: 374px;
+    overflow: hidden;
+}
+
+.lwr-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.lwr-nav {
+    background: #111;
+}
+
+.lwr-nav ul li a {
+    color: #fff;
+    padding: 10px 10px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+}
+
+.lwr-nav ul li a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.lwr-nav ul li a.active {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.collapse.navbar-collapse.mobile-nav {
+    background: #eee;
+    text-align: center;
+    overflow: hidden;
+}
+
+.collapse.navbar-collapse.mobile-nav li {
+    margin: 5px 0;
+}
+
+.collapse.navbar-collapse.mobile-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links .social-line {
+    background-color: #fff;
+    width: 2px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons>div {
+    margin-bottom: 5px;
+}
+
+/* Header Ends */
+
+/* Category STARTS*/
+section.category {
+    padding: 50px 0;
+}
+
+section.category .row .col-sm-4:nth-child(1) .cat-card {
+    background-image: url('/assets/gun-pallets.png');
+}
+
+section.category .row .col-sm-4:nth-child(2) .cat-card {
+    background-image: url('/assets/pistols.png');
+}
+
+section.category .row .col-sm-4:nth-child(3) .cat-card {
+    background-image: url('/assets/rifles.png');
+}
+
+.cat-card {
+    position: relative;
+    height: 260px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.cat-card .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(100.35deg, rgba(15, 32, 39, 0.7) 2.55%, rgba(32, 58, 67, 0.7) 47.53%, rgba(44, 83, 100, 0.7) 102.96%);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.cat-card .cat-text {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat';
+    max-width: 230px;
+}
+
+.cat-card .cat-text h1 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.cat-card .cat-text p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.cat-card .cat-text a {
+    padding: 10px 15px;
+    background: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Category ENDS*/
+
+
+/* Product List STARTS*/
+.product-list {
+    margin-top: 50px;
+}
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    font-family: 'Montserrat';
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+    padding-top: 10px;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #AAAAAA;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: 24px;
+    stroke: #333;
+}
+
+.MultiCarousel .leftLst {
+    right: 50px;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst.over svg,
+.MultiCarousel .rightLst.over svg {
+    pointer-events: none;
+    stroke: #aaa;
+}
+
+.list-head {
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-head h1 {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.list-head .view-btn {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    border-right: 1px solid #333;
+    padding-right: 20px;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+}
+
+.product-img img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-det {
+    border-top: 2px solid rgba(232, 65, 41, 0.6);
+}
+
+.product-det {
+    border-top: 2px solid rgba(232, 65, 41, 0.6);
+    padding: 20px 15px;
+    text-align: left;
+}
+
+.product-det h2 {
+    font-size: 14px;
+}
+
+.product-det s {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+}
+
+.product-det b {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-left: 10px;
+}
+
+.product-det a {
+    padding: 10px 15px;
+    display: block;
+    background: var(--primary);
+    width: fit-content;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+}
+
+/* Product List ENDS*/
+
+
+/* Benefits STARTS*/
+.benefits {
+    background: linear-gradient(100.41deg, #0F2027 2.55%, #203A43 97.76%, #2C5364 122.81%), #D9D9D9;
+    padding: 30px 0;
+}
+
+.benefit-icon {
+    margin-right: 10px;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Montserrat';
+}
+
+.benefit-text b {
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.benefit-text span {
+    color: #999999;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+/* Benefits ENDS*/
+
+/* Blogs STARTS*/
+.blogs {
+    margin-top: 40px;
+}
+
+.blogs img {
+    object-fit: cover;
+}
+
+.blogs .product-det b {
+    margin-left: 0;
+    color: #aaa;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.blogs .product-det a {
+    padding: 0;
+    display: block;
+    background: none;
+    width: fit-content;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.blogs .MultiCarousel .MultiCarousel-inner .item>div {
+    border: none;
+}
+
+.blogs .product-det {
+    padding: 10px 5px;
+    border-top: none;
+}
+
+.blogs .product-det .read-btn svg {
+    transition: 0.5s ease-in-out;
+}
+
+.blogs .product-det .read-btn:hover svg {
+    transform: translateX(5px);
+    transition: 0.5s ease-in-out;
+}
+
+/* Blogs ENDS*/
+
+
+/* FOOTER STARTS */
+footer {
+    background-color: #111;
+    color: #fff;
+    font-family: "Montserrat";
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    color: #999;
+}
+
+footer p {
+    color: #999;
+}
+
+footer a[type="submit"] {
+    display: block;
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+footer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #999;
+}
+
+/* FOOTER ENDS */
+
+@media only screen and (max-width: 1199px) {
+    .benefit-text b {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .benefit-text span {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .cart-icon,
+    .user-icon {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-bar input {
+        width: unset;
+    }
+
+    .logo-img {
+        margin-right: 30px;
+    }
+
+    .lwr-nav {
+        display: none;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .search-bar input {
+        height: 35px;
+        font-size: 14px;
+        min-width: 200px;
+    }
+
+    .search-bar button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .search-bar button img {
+        width: 12px;
+    }
+
+    .hamburger {
+        padding: 0;
+        height: 24px;
+    }
+
+    .hamburger-inner::before {
+        top: -7px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -7px;
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 28px;
+        height: 3px;
+    }
+
+    .hamburger-inner {
+        width: 28px;
+        height: 3px;
+    }
+
+    .hamburger-box {
+        width: 28px;
+    }
+
+    .cat-card .cat-text p {
+        font-size: 10px;
+    }
+
+    .cat-card .cat-text h1 {
+        font-size: 16px;
+    }
+
+    .cat-card {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .list-head h1 {
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+    .MultiCarousel .leftLst,
+    .MultiCarousel .rightLst {
+        top: 17px;
+    }
+
+    .MultiCarousel .rightLst {
+        right: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .benefit {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        flex-direction: column;
+        text-align: center;
+        margin: 16px;
+    }
+
+    .list-head {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .list-head .view-btn {
+        font-size: 15px;
+        color: #333;
+        font-weight: 700;
+        min-width: 78px;
+        border: none;
+        padding: 0;
+        text-align: right;
+    }
+
+    .MultiCarousel .leftLst,
+    .MultiCarousel .rightLst {
+        top: 50px;
+    }
+
+    .list-head h1 {
+        font-weight: 800;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .search-bar {
+        display: none;
+    }
+}
