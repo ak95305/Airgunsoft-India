@@ -30,7 +30,7 @@ a:active {
 .prm-btn,
 .prm-btn:before,
 .prm-btn:after {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .prm-btn {
@@ -199,8 +199,9 @@ a:active {
 /*HAMBURGER ENDS*/
 .sub-menu-parent {
     position: relative;
-  }
-  .sub-menu {
+}
+
+.sub-menu {
     visibility: hidden;
     /* hides sub-menu */
     opacity: 0;
@@ -211,10 +212,11 @@ a:active {
     transform: translateY(-2em);
     z-index: 99;
     transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  }
-  .sub-menu-parent:focus .sub-menu,
-  .sub-menu-parent:focus-within .sub-menu,
-  .sub-menu-parent:hover .sub-menu {
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
     visibility: visible;
     /* shows sub-menu */
     opacity: 1;
@@ -222,38 +224,45 @@ a:active {
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
-  }
-  nav a {
+}
+
+nav a {
     color: #E00;
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     color: #F55;
-  }
-  nav ul,
-  nav ul li {
+}
+
+nav ul,
+nav ul li {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  nav > ul {
+}
+
+nav>ul {
     background: #111;
     text-align: center;
-  }
-  nav > ul > li {
+}
+
+nav>ul>li {
     display: inline-block;
     border-left: solid 1px #aaa;
-  }
-  nav > ul > li:first-child {
+}
+
+nav>ul>li:first-child {
     border-left: none;
-  }
-  .sub-menu {
+}
+
+.sub-menu {
     background: #111;
     width: calc(100% + 120px);
-  }
-  
+}
+
 
 /* Header Starts */
 .upr-strip {
@@ -267,6 +276,7 @@ a:active {
 
 .upr-nav {
     padding: 20px 0;
+    background-color: #fff;
 }
 
 .logo-search {
@@ -331,7 +341,7 @@ input.search-term:focus-within {
 
 .mobile-nav {
     transition: all linear .25s;
-    height: 0;
+    max-height: 0;
     display: block !important;
     position: absolute;
     z-index: 999;
@@ -339,9 +349,36 @@ input.search-term:focus-within {
 }
 
 .mobile-nav.nav-show {
+    padding: 30px;
     transition: all linear .25s;
-    height: 374px;
+    max-height: 500px;
     overflow: hidden;
+}
+.mobile-nav .search-bar{
+    margin-bottom: 10px;
+}
+.mobile-nav .search-bar input {
+    min-width: unset;
+    width: 100%;
+}
+
+.mobile-nav .search-bar {
+    display: none;
+    justify-content: center;
+}
+
+.mobile-nav .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.mobile-nav .nav-links>ul {
+    flex-basis: 50%;
+}
+
+.cart-profile{
+    margin-top: 10px;
 }
 
 .lwr-nav .nav-bar {
@@ -472,7 +509,7 @@ section.category .row .col-sm-4:nth-child(3) .cat-card {
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 1px;
-    margin: 0;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -499,19 +536,23 @@ section.owl-prd-list {
     padding: 50px 0px;
     font-family: 'Montserrat';
 }
-.owl-left svg, .owl-right svg{
+
+.owl-left svg,
+.owl-right svg {
     stroke: #333;
 }
+
 .owl-nav {
     position: absolute;
     right: 0;
     top: -70px;
 }
+
 .list-head {
     width: calc(100% - 80px);
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-bottom: 30px;
 
 }
@@ -527,6 +568,11 @@ section.owl-prd-list {
     font-weight: 700;
     border-right: 1px solid #333;
     padding-right: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 .product-img {
@@ -642,9 +688,6 @@ section.owl-prd-list {
     font-size: 14px;
 }
 
-.blogs .MultiCarousel .MultiCarousel-inner .item>div {
-    border: none;
-}
 
 .blogs .product-det {
     padding: 10px 5px;
@@ -661,6 +704,333 @@ section.owl-prd-list {
 }
 
 /* Blogs ENDS*/
+
+
+/*===================================== Category Page Starts =====================================*/
+
+
+
+/* Category Box */
+section.prod-list {
+    padding: 50px 0;
+    font-family: 'Montserrat';
+}
+
+.cat-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.cat-box h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cat-sub-menu {
+    background: #fff;
+    box-shadow: 0 0 5px 2px #ddd;
+    padding: 6px 15px;
+    margin: 15px 0;
+    overflow: hidden;
+    transition: all linear .3s;
+}
+
+.cat-sub-menu .cat-drop-down {
+    max-height: 0;
+    overflow: hidden;
+    transition: all linear .3s;
+}
+
+.cat-sub-menu .cat-drop-down.active {
+    max-height: 500px;
+    transition: all linear .3s;
+}
+
+.cat-sub-menu-head {
+    position: relative;
+    cursor: pointer;
+}
+
+.cat-sub-menu-head h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+}
+
+.cat-sub-menu-head .plus-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cat-sub-menu-head .plus-icon .stick {
+    width: 10px;
+    height: 2px;
+    background: #666;
+    display: inline-block;
+}
+
+span.plus-icon .stick {
+    position: absolute;
+    right: 0;
+}
+
+span.plus-icon .stick2 {
+    transform-origin: center;
+    transition: all linear .2s;
+    transform: rotate(-90deg);
+}
+
+ul.cat-drop-down li {
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+span.plus-icon .stick2.active {
+    transform: rotate(0deg);
+    transition: all linear .2s;
+}
+
+/*===================================== Category Page Ends =====================================*/
+
+
+
+
+/*===================================== Blogs Page Ends =====================================*/
+
+.blogs-section {
+    padding: 50px 0;
+    font-family: 'Montserrat';
+}
+
+.search-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.search-box h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.search-box a[type="submit"] {
+    display: block;
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.blogs-section .cat-sub-menu-head h4 {
+    margin: 10px 0;
+}
+
+.blogs-section .product-det h2 {
+    margin-bottom: 0;
+}
+
+.blogs-section.blogs {
+    margin-top: 0;
+}
+
+/*===================================== Blogs Page Ends =====================================*/
+
+
+
+
+/*===================================== Contact Page Starts =====================================*/
+.contact-bg img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.contact-bg {
+    height: 260px;
+    position: relative;
+}
+
+.contact-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: .5;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Montserrat';
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 40px;
+    height: 152px;
+}
+
+.contact-methods {
+    transform: translateY(-50%);
+}
+
+.contact-text b {
+    color: #333;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.contact-text span {
+    color: #999999;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.form-map {
+    margin: 30px 0;
+}
+
+.contact-form {
+    font-family: 'Montserrat';
+}
+
+.contact-form h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-form .feedback-input {
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 2px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    color: #333;
+}
+
+.contact-form .feedback-input:focus {
+    border: 1px solid var(--primary);
+}
+
+.contact-form textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: fit-content;
+    background: var(--primary);
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #CC4949;
+}
+
+
+/*===================================== Contact Page Ends =====================================*/
+
+
+/*===================================== Video Page Starts =====================================*/
+
+.videos {
+    font-family: 'Montserrat';
+}
+
+.video-card {
+    overflow: hidden;
+    padding-bottom: 75%;
+    min-height: 210px;
+    margin: 10px 0;
+}
+
+@media(min-width: 768px) {
+    .video-card {
+        padding-bottom: 50%;
+    }
+}
+
+.video-card .hover {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.4s;
+}
+
+.video-card:hover .hover {
+    opacity: 1;
+}
+
+.video-card .video-title {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.video-card:hover .video-title {
+    opacity: 0;
+}
+
+/*===================================== Video Page Ends =====================================*/
+
+
+
+
 
 
 /* FOOTER STARTS */
@@ -726,8 +1096,8 @@ footer input {
 
 @media only screen and (max-width: 991px) {
 
-    .cart-icon,
-    .user-icon {
+    .upr-nav .cart-icon,
+    .upr-nav .user-icon {
         display: none;
     }
 
@@ -812,7 +1182,8 @@ footer input {
         font-weight: 800;
         font-size: 24px;
     }
-    .owl-nav{
+
+    .owl-nav {
         top: -64px;
     }
 }
@@ -847,13 +1218,17 @@ footer input {
         font-size: 22px;
     }
 
-    .owl-nav{
+    .owl-nav {
         top: -46px;
     }
 }
 
 @media only screen and (max-width: 475px) {
-    .search-bar {
+    .upr-nav .search-bar {
         display: none;
+    }
+
+    .mobile-nav .search-bar {
+        display: flex;
     }
 }

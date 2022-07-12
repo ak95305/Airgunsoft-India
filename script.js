@@ -1,3 +1,4 @@
+//Hamburger Menu
 var hamburgers = document.querySelectorAll(".hamburger");
 var navCollapse = document.querySelector(".mobile-nav");
 
@@ -6,6 +7,7 @@ if (hamburgers.length > 0) {
     hamburger.addEventListener("click", function() {
         this.classList.toggle("is-active");
         navCollapse.classList.toggle('nav-show');
+        document.body.classList.toggle('overflow-hidden');
     }, false);
     });
 }
@@ -28,4 +30,47 @@ $('.owl-prd-carousel').owlCarousel({
             items:5
         }
     }
+})
+
+
+// Category Dropdown
+let catSubMenu = document.querySelectorAll('.cat-sub-menu');
+let stick2 = document.querySelectorAll('.stick2');
+catSubMenu.forEach((i, n)=>{
+    i.addEventListener('click', ()=>{
+        
+        catSubMenu.forEach((j)=>{
+            if(j.childNodes[3]){
+                j.childNodes[3].classList.remove('active')
+            }
+        })
+        stick2.forEach((k)=>{
+            if(k){
+                k.classList.remove('active')
+            }
+        })
+
+        i.childNodes[3].classList.add('active');
+        stick2[n].classList.add('active');
+    });
+  })
+
+
+
+
+
+
+
+
+
+let gunImg = document.querySelectorAll('.prod-list .product-img img');
+
+gunImg.forEach((i)=>{
+    i.setAttribute('src', 'assets/gun0'+ (Math.floor(Math.random() * 8) + 1) +'.png');
+})
+
+let blogImg = document.querySelectorAll('.blogs-section .product-img img');
+
+blogImg.forEach((i)=>{
+    i.setAttribute('src', 'assets/blog'+ (Math.floor(Math.random() * 4) + 1) +'-img.png');
 })
