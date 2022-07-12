@@ -346,6 +346,8 @@ input.search-term:focus-within {
     position: absolute;
     z-index: 999;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .mobile-nav.nav-show {
