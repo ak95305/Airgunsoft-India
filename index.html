@@ -8,8 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -83,12 +84,44 @@
             </div>
             <div class="lwr-nav">
                 <div class="container">
-                    <ul>
+                    <ul class="nav-bar">
                         <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Air Gun</a></li>
-                        <li><a href="#">Airsoft Gun</a></li>
-                        <li><a href="#">Replica</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li class="sub-menu-parent"><a href="#">Air Gun</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Imported Co2 Air Pistol In India</a></li>
+                                <li><a href="#">Imported Co2 Revolver In India</a></li>
+                                <li><a href="#">Cheap .177 Air Gun In India</a></li>
+                                <li><a href="#">Cheap Air Rifle</a></li>
+                                <li><a href="#">Imported Air Rifle In India</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-parent"><a href="#">Airsoft Gun</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Airsoft Pistol</a></li>
+                                <li><a href="#">AirSoft Revolver</a></li>
+                                <li><a href="#">Airsoft Rifle</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-parent"><a href="#">Replica</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Replica Lighter</a></li>
+                                <li><a href="#">Non Firing Replica Gun</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-parent"><a href="#">Accessories</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Ammo</a></li>
+                                <li><a href="#">co2 Magazine For Air Gun</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">T Shirts</a></li>
+                                <li><a href="#">Covers</a></li>
+                                <li><a href="#">Metal Gun Box</a></li>
+                                <li><a href="#">Holsters</a></li>
+                                <li><a href="#">Scope For Air Rifles</a></li>
+                                <li><a href="#">Airgun Shells, Parts &amp; Target</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Cork Sound Toy Gun</a></li>
                         <li><a href="#">Gift Toys</a></li>
                         <li><a href="#">Blog</a></li>
@@ -116,10 +149,10 @@
                 </div>
             </div>
         </header>
-        <!-- Header -->
+        <!-- Header Ends-->
 
 
-        <!-- Caraousel -->
+        <!-- Caraousel Starts-->
         <section class="carousel hero-section">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -183,10 +216,10 @@
             </div> -->
 
         </section>
-        <!-- Carousel -->
+        <!-- Carousel Ends-->
 
 
-        <!-- Category -->
+        <!-- Category Starts-->
         <section class="category">
             <div class="container">
                 <div class="row">
@@ -223,10 +256,10 @@
                 </div>
             </div>
         </section>
-        <!-- Category -->
+        <!-- Category Ends-->
 
 
-        <!-- Benifits -->
+        <!-- Benifits Starts-->
         <section class="benefits">
             <div class="container">
                 <div class="row">
@@ -383,620 +416,536 @@
                 </div>
             </div>
         </section>
-        <!-- Benifits -->
+        <!-- Benifits Ends-->
 
 
 
-        <!-- Products List -->
-        <section class="product-list">
+        <!-- Products List Starts-->
+
+        <section class="owl-prd-list">
             <div class="container">
-                <div class="row">
-                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
-                        data-interval="1000">
-                        <div class="list-head">
-                            <h1>Imported Air Rifles</h1>
-                            <a href="" class="view-btn">View All</a>
-                        </div>
-                        <div class="MultiCarousel-inner">
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun01.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                <div class="list-head">
+                    <h1>Imported Air Rifles</h1>
+                    <a href="" class="view-btn">View All</a>
+                </div>
+                <div class="owl-prd-carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun01.png" alt="gun">
                             </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun02.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun01.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun07.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun01.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun02.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun09.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun02.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun01.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
                             </div>
                         </div>
-                        <a class="leftLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.6665 16H5.33317M14.6665 25.3334L5.33317 16L14.6665 6.66671"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-
-                        </a>
-                        <a class="rightLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.3335 16H26.6668M17.3335 6.66663L26.6668 16L17.3335 25.3333" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun02.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun01.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun07.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun01.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun02.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun02.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun02.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun01.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun03.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="product-list">
+
+        <section class="owl-prd-list">
             <div class="container">
-                <div class="row">
-                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
-                        data-interval="1000">
-                        <div class="list-head">
-                            <h1>Cheap .177 Air Gun</h1>
-                            <a href="" class="view-btn">View All</a>
-                        </div>
-                        <div class="MultiCarousel-inner">
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun03.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                <div class="list-head">
+                    <h1>Cheap .177 Air Gun</h1>
+                    <a href="" class="view-btn">View All</a>
+                </div>
+                <div class="owl-prd-carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun03.png" alt="gun">
                             </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun04.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun05.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun03.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun04.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun05.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun03.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun04.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun05.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun03.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
                             </div>
                         </div>
-                        <a class="leftLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.6665 16H5.33317M14.6665 25.3334L5.33317 16L14.6665 6.66671"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-
-                        </a>
-                        <a class="rightLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.3335 16H26.6668M17.3335 6.66663L26.6668 16L17.3335 25.3333" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun04.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun05.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun03.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun04.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun05.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun03.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun04.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun05.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun03.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="product-list">
+
+        <section class="owl-prd-list">
             <div class="container">
-                <div class="row">
-                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
-                        data-interval="1000">
-                        <div class="list-head">
-                            <h1>Airsoft Pistol</h1>
-                            <a href="" class="view-btn">View All</a>
-                        </div>
-                        <div class="MultiCarousel-inner">
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun06.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                <div class="list-head">
+                    <h1>Airsoft Pistol</h1>
+                    <a href="" class="view-btn">View All</a>
+                </div>
+                <div class="owl-prd-carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun06.png" alt="gun">
                             </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun07.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun08.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun06.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun07.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun08.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun06.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun07.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun08.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/gun07.png" alt="gun">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
-                                        <s>₹35,000</s><b>₹30,000</b>
-                                        <a href="" class="prm-btn">Add to Cart</a>
-                                    </div>
-                                </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
                             </div>
                         </div>
-                        <a class="leftLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.6665 16H5.33317M14.6665 25.3334L5.33317 16L14.6665 6.66671"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-
-                        </a>
-                        <a class="rightLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.3335 16H26.6668M17.3335 6.66663L26.6668 16L17.3335 25.3333" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun07.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun08.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun06.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun07.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun08.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun06.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun07.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun08.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/gun07.png" alt="gun">
+                            </div>
+                            <div class="product-det">
+                                <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                <s>₹35,000</s><b>₹30,000</b>
+                                <a href="" class="prm-btn">Add to Cart</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Products List -->
+
+        <!-- Products List Ends-->
 
 
-        <!-- Blogs -->
+        <!-- Blogs Starts-->
         <section class="blogs">
             <div class="container">
-                <div class="row">
-                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
-                        data-interval="1000">
-                        <div class="list-head">
-                            <h1>Our Latest Blogs</h1>
-                            <a href="" class="view-btn">View All</a>
-                        </div>
-                        <div class="MultiCarousel-inner">
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog1-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
+                <div class="list-head">
+                    <h1>Our Latest Blogs</h1>
+                    <a href="" class="view-btn">View All</a>
+                </div>
+                <div class="owl-prd-carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog1-img.png" alt="blog1">
                             </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog2-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog3-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog4-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog2-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <img src="assets/blog1-img.png" alt="blog1">
-                                    </div>
-                                    <div class="product-det">
-                                        <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
-                                        <b>May 24, 2022</b>
-                                        <a href="" class="read-btn">Read More
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
-                                                    fill="#E84129" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
-                        <a class="leftLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.6665 16H5.33317M14.6665 25.3334L5.33317 16L14.6665 6.66671"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-
-                        </a>
-                        <a class="rightLst">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.3335 16H26.6668M17.3335 6.66663L26.6668 16L17.3335 25.3333" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog2-img.png" alt="blog1">
+                            </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog3-img.png" alt="blog1">
+                            </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog4-img.png" alt="blog1">
+                            </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog2-img.png" alt="blog1">
+                            </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="assets/blog1-img.png" alt="blog1">
+                            </div>
+                            <div class="product-det">
+                                <h2>Kamal Haasan Used Our Gun In Vikram Movie Ft Vijay Sethupathi</h2>
+                                <b>May 24, 2022</b>
+                                <a href="" class="read-btn">Read More
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.99941C0 3.8668 0.0526785 3.73963 0.146447 3.64586C0.240215 3.55209 0.367392 3.49941 0.5 3.49941H6.293L4.146 1.35341C4.05211 1.25952 3.99937 1.13219 3.99937 0.999411C3.99937 0.866635 4.05211 0.739298 4.146 0.645411C4.23989 0.551524 4.36722 0.498779 4.5 0.498779C4.63278 0.498779 4.76011 0.551524 4.854 0.645411L7.854 3.64541C7.90056 3.69186 7.93751 3.74703 7.96271 3.80778C7.98792 3.86852 8.00089 3.93364 8.00089 3.99941C8.00089 4.06518 7.98792 4.1303 7.96271 4.19104C7.93751 4.25179 7.90056 4.30697 7.854 4.35341L4.854 7.35341C4.76011 7.4473 4.63278 7.50004 4.5 7.50004C4.36722 7.50004 4.23989 7.4473 4.146 7.35341C4.05211 7.25952 3.99937 7.13219 3.99937 6.99941C3.99937 6.86664 4.05211 6.7393 4.146 6.64541L6.293 4.49941H0.5C0.367392 4.49941 0.240215 4.44673 0.146447 4.35296C0.0526785 4.2592 0 4.13202 0 3.99941Z"
+                                            fill="#E84129" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Blogs -->
+        <!-- Blogs Ends-->
 
-        <!-- Footer -->
+        <!-- Footer Starts-->
         <footer>
             <div class="container">
                 <div class="row">
@@ -1037,13 +986,15 @@
                             <p>Get all the best deals, sales and offers from the best online shopping store in India.
                                 Sign up now !</p>
                             <div class="input-form">
-                                <input type="text" placeholder="Your Email"><a href="" type="submit" class="prm-btn">Subscribe</a>
+                                <input type="text" placeholder="Your Email"><a href="" type="submit"
+                                    class="prm-btn">Subscribe</a>
                             </div>
                         </div>
                         <div class="call-back">
                             <h3>Request A Call Back</h3>
                             <div class="input-form">
-                                <input type="text" placeholder="Your Contact No."><a href="" type="submit" class="prm-btn">Submit</a>
+                                <input type="text" placeholder="Your Contact No."><a href="" type="submit"
+                                    class="prm-btn">Submit</a>
                             </div>
                         </div>
                     </div>
@@ -1054,13 +1005,14 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer -->
+        <!-- Footer Ends-->
     </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </body>
 
