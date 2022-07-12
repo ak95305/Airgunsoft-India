@@ -197,7 +197,63 @@ a:active {
 }
 
 /*HAMBURGER ENDS*/
-
+.sub-menu-parent {
+    position: relative;
+  }
+  .sub-menu {
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: 99;
+    transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+  .sub-menu-parent:focus .sub-menu,
+  .sub-menu-parent:focus-within .sub-menu,
+  .sub-menu-parent:hover .sub-menu {
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  nav a {
+    color: #E00;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #F55;
+  }
+  nav ul,
+  nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav > ul {
+    background: #111;
+    text-align: center;
+  }
+  nav > ul > li {
+    display: inline-block;
+    border-left: solid 1px #aaa;
+  }
+  nav > ul > li:first-child {
+    border-left: none;
+  }
+  .sub-menu {
+    background: #111;
+    width: calc(100% + 120px);
+  }
+  
 
 /* Header Starts */
 .upr-strip {
@@ -288,7 +344,7 @@ input.search-term:focus-within {
     overflow: hidden;
 }
 
-.lwr-nav ul {
+.lwr-nav .nav-bar {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -439,62 +495,25 @@ section.category .row .col-sm-4:nth-child(3) .cat-card {
 
 
 /* Product List STARTS*/
-.product-list {
-    margin-top: 50px;
-}
-
-.MultiCarousel {
-    float: left;
-    overflow: hidden;
-    padding: 15px;
-    width: 100%;
-    position: relative;
+section.owl-prd-list {
+    padding: 50px 0px;
     font-family: 'Montserrat';
 }
-
-.MultiCarousel .MultiCarousel-inner {
-    transition: 1s ease all;
-    float: left;
-    padding-top: 10px;
-}
-
-.MultiCarousel .MultiCarousel-inner .item {
-    float: left;
-}
-
-.MultiCarousel .MultiCarousel-inner .item>div {
-    text-align: center;
-    margin: 10px;
-    border: 1px solid #AAAAAA;
-}
-
-.MultiCarousel .leftLst,
-.MultiCarousel .rightLst {
-    position: absolute;
-    border-radius: 50%;
-    top: 24px;
+.owl-left svg, .owl-right svg{
     stroke: #333;
 }
-
-.MultiCarousel .leftLst {
-    right: 50px;
-}
-
-.MultiCarousel .rightLst {
+.owl-nav {
+    position: absolute;
     right: 0;
+    top: -70px;
 }
-
-.MultiCarousel .leftLst.over svg,
-.MultiCarousel .rightLst.over svg {
-    pointer-events: none;
-    stroke: #aaa;
-}
-
 .list-head {
     width: calc(100% - 80px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
+    margin-bottom: 30px;
+
 }
 
 .list-head h1 {
@@ -558,6 +577,7 @@ section.category .row .col-sm-4:nth-child(3) .cat-card {
     font-size: 10px;
 }
 
+
 /* Product List ENDS*/
 
 
@@ -594,7 +614,9 @@ section.category .row .col-sm-4:nth-child(3) .cat-card {
 
 /* Blogs STARTS*/
 .blogs {
+    padding: 50px 0;
     margin-top: 40px;
+    font-family: 'Montserrat';
 }
 
 .blogs img {
@@ -785,19 +807,13 @@ footer input {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .list-head h1 {
         font-weight: 800;
         font-size: 24px;
     }
-
-    .MultiCarousel .leftLst,
-    .MultiCarousel .rightLst {
-        top: 17px;
-    }
-
-    .MultiCarousel .rightLst {
-        right: 12px;
+    .owl-nav{
+        top: -64px;
     }
 }
 
@@ -813,7 +829,7 @@ footer input {
 
     .list-head {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .list-head .view-btn {
@@ -826,14 +842,13 @@ footer input {
         text-align: right;
     }
 
-    .MultiCarousel .leftLst,
-    .MultiCarousel .rightLst {
-        top: 50px;
-    }
-
     .list-head h1 {
         font-weight: 800;
         font-size: 22px;
+    }
+
+    .owl-nav{
+        top: -46px;
     }
 }
 
