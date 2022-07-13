@@ -728,9 +728,13 @@ section.prod-list {
     font-size: 16px;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
-
+.cat-box-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .cat-sub-menu {
     background: #fff;
     box-shadow: 0 0 5px 2px #ddd;
@@ -1081,7 +1085,7 @@ footer .social-icons{
     flex-direction: row;
     margin-top: 20px;
 }
-footer .social-icons > div{
+footer .social-icons > a{
     margin-right: 20px;
 }
 .copyright {
