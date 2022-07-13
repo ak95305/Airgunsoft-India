@@ -57,6 +57,15 @@ catSubMenu.forEach((i, n)=>{
 
 
 
+// Mobile Category Drop Down
+let catBox = document.querySelector('.submenus');
+let catBoxDrop = document.querySelector('.cat-box-head');
+let catBoxDropIcon = document.querySelector('.cat-box-head .drop-icon');
+
+catBoxDrop.addEventListener('click', ()=>{
+    catBox.classList.toggle('active');
+    catBoxDropIcon.classList.toggle('active');
+});
 
 
 

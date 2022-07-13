@@ -735,11 +735,15 @@ section.prod-list {
     align-items: center;
     justify-content: space-between;
 }
+.cat-box-head .drop-icon{
+    display: none;
+}
+
 .cat-sub-menu {
     background: #fff;
     box-shadow: 0 0 5px 2px #ddd;
     padding: 6px 15px;
-    margin: 15px 0;
+    margin: 15px 5px;
     overflow: hidden;
     transition: all linear .3s;
 }
@@ -1197,6 +1201,23 @@ footer .social-icons > a{
 
     .owl-nav {
         top: -64px;
+    }
+    .cat-box-head .drop-icon{
+        display: block;
+        transition: all linear .3s;
+    }
+    .cat-box-head .drop-icon.active{
+        transform: rotate(-180deg);
+        transition: all linear .3s;
+    }
+    .cat-box .submenus {
+        max-height: 0;
+        overflow: hidden;
+        transition: all linear .3s;
+    }
+    .cat-box .submenus.active{
+        max-height: 1000px;
+        transition: all linear .3s;
     }
 }
 
