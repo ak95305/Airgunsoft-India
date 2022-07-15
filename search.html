@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.min.css">
@@ -193,189 +193,145 @@
         <!-- Header Ends-->
 
 
-        <!-- Product Detail Starts -->
-        <section class="prod-detail">
+
+        <!-- Search Section Starts -->
+
+        <section class="search-sec">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id='lens'></div>
-                        <div id="slider" class="owl-carousel product-slider">
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun1.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun2.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun3.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun4.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun5.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun6.jpeg" />
-                            </div>
-                        </div>
-                        <div id='result'></div>
-                        <div id="thumb" class="owl-carousel product-thumb">
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun1.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun2.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun3.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun4.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="/assets/green-gun5.jpeg" />
-                            </div>
-                            <div class="item">
-                                <img src="/assets/green-gun6.jpeg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="product-dtl">
-                            <div class="product-info">
-                                <div class="product-name">Bond Target Green Color Grip Single-Shot .177 Caliber / 4.5 Mm Indian Air Pistol By Airsoft Gun India</div>
-                                <div class="reviews-counter">
-                                    <div class="rate">
-                                        <input type="radio" id="star5" name="rate" value="5" checked />
-                                        <label for="star5" title="text">5 stars</label>
-                                        <input type="radio" id="star4" name="rate" value="4" checked />
-                                        <label for="star4" title="text">4 stars</label>
-                                        <input type="radio" id="star3" name="rate" value="3" checked />
-                                        <label for="star3" title="text">3 stars</label>
-                                        <input type="radio" id="star2" name="rate" value="2" />
-                                        <label for="star2" title="text">2 stars</label>
-                                        <input type="radio" id="star1" name="rate" value="1" />
-                                        <label for="star1" title="text">1 star</label>
-                                    </div>
-                                    <span>3 Reviews</span>
-                                </div>
-                                <div class="product-price-discount"><span>₹2100</span><span
-                                        class="line-through">₹4000</span></div>
-                            </div>
-                            <p>Bond Target Green color grip Single-Shot .177 Caliber / 4.5 Mm Indian Air Pistol By Airsoft Gun India.
+                <div class="search-res-head">
+                    <h3 class="mb-3">Showing results for <b>"Pistols"</b></h3>
 
-                                It's an Indian-made Single-shot .177 Caliber / 4.5 mm Air pistol, that uses .177 Indian pellets as ammo.
-                                Ammo: .177 Caliber Pellets
-                                Range: 10 Meters Approx
-                                ID/ Address Proof is mandatory for purchasing
-                                NO LICENCE IS REQUIRED FOR THIS AIR GUN COMES UNDER THE CATEGORY G.S.R. 991.</p>
-                            <!-- <div class="row">
-                                <div class="col-md-6">
-                                    <label for="size">Size</label>
-                                    <select id="size" name="size" class="form-control">
-                                        <option>S</option>
-                                        <option>M</option>
-                                        <option>L</option>
-                                        <option>XL</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="color">Color</label>
-                                    <select id="color" name="color" class="form-control">
-                                        <option>Blue</option>
-                                        <option>Green</option>
-                                        <option>Red</option>
-                                    </select>
-                                </div>
-                            </div> -->
-                            <div class="product-count">
-                                <label for="size">Quantity</label>
-                                <form action="#" class="display-flex">
-                                    <div class="qtyminus">-</div>
-                                    <input type="text" name="quantity" value="1" class="qty">
-                                    <div class="qtyplus">+</div>
-                                </form>
-                                <a href="#" class="round prm-btn">Add to Cart</a>
+                    <div class="search-filter">
+                        <div class="row align-items-end">
+                            <div class="col-6">
+                                <select class="form-select form-select">
+                                    <option selected>In Stock First</option>
+                                    <option value="1">Price Low to High</option>
+                                    <option value="2">Price High to Low</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="show" class="fw-normal mb-1">Show</label>
+                                <select class="form-select form-select">
+                                    <option selected>12</option>
+                                    <option value="1">24</option>
+                                    <option value="2">36</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-info-tabs">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" type="button" data-bs-target="#description"
-                                role="tab" aria-controls="description" aria-selected="true">Description</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="review-tab" data-bs-toggle="tab" type="button" data-bs-target="#review" role="tab"
-                                aria-controls="review" aria-selected="false">Reviews (0)</button>
-                        </li>
+
+                <div class="search-res">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="assets/gun06.png" alt="gun">
+                                    </div>
+                                    <div class="product-det">
+                                        <h2>Basic .177 Air Rifle Light Brown By Airsoft Gun India</h2>
+                                        <s>₹35,000</s><b>₹30,000</b>
+                                        <a href="" class="prm-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link previous" href="#">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link next" href="#">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="description" role="tabpanel"
-                            aria-labelledby="description-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
-                            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.
-                        </div>
-                        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                            <div class="review-heading">REVIEWS</div>
-                            <p class="mb-20">There are no reviews yet.</p>
-                            <form class="review-form">
-                                <div class="form-group">
-                                    <label>Your rating</label>
-                                    <div class="reviews-counter">
-                                        <div class="rate">
-                                            <input type="radio" id="star5" name="rate" value="5" />
-                                            <label for="star5" title="text">5 stars</label>
-                                            <input type="radio" id="star4" name="rate" value="4" />
-                                            <label for="star4" title="text">4 stars</label>
-                                            <input type="radio" id="star3" name="rate" value="3" />
-                                            <label for="star3" title="text">3 stars</label>
-                                            <input type="radio" id="star2" name="rate" value="2" />
-                                            <label for="star2" title="text">2 stars</label>
-                                            <input type="radio" id="star1" name="rate" value="1" />
-                                            <label for="star1" title="text">1 star</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Your message</label>
-                                    <textarea class="form-control mb-3" rows="10"></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="" class="form-control" placeholder="Name*">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="" class="form-control" placeholder="Email Id*">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="round-black-btn">Submit Review</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-               
+                  </div>
             </div>
         </section>
-        <!-- Product Detail Ends -->
+
+        <!-- Search Section Ends -->
 
 
 
@@ -478,64 +434,11 @@
     </div>
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        
-// Product Zoom
-$(document).ready(function(){
-    $(document).mousemove(function(e) {
-        var x = e.clientX; var y = e.clientY;
-        
-        var x = e.clientX; var y = e.clientY;
-    
-        var imgx1 = $('.owl-item.active img').offset().left;
-        var imgx2 = $('.owl-item.active img').outerWidth() + imgx1;
-        var imgy1 = $('.owl-item.active img').offset().top;
-        var imgy2 = $('.owl-item.active img').outerHeight() + imgy1;
-    
-        if ( x > imgx1 && x < imgx2 && y > imgy1 && y < imgy2 ) {
-          $('#lens').show(); $('#result').show();
-          imageZoom( $('.owl-item.active img'), $('#result'), $('#lens') );
-        } else {
-          $('#lens').hide(); $('#result').hide();
-        }
-    
-      });
-});
-
-function imageZoom( img, result, lens ) {
-
-    result.width( img.innerWidth() ); result.height( img.innerHeight() );
-    lens.width( img.innerWidth() / 2 ); lens.height( img.innerHeight() / 2 );
-  
-    result.offset({ top: img.offset().top, left: img.offset().left + img.outerWidth() + 10 });
-  
-    var cx = img.innerWidth() / lens.innerWidth(); var cy = img.innerHeight() / lens.innerHeight();
-  
-    result.css('backgroundImage', 'url(' + img.attr('src') + ')');
-    result.css('backgroundSize', img.width() * cx + 'px ' + img.height() * cy + 'px');
-  
-    lens.mousemove(function(e) { moveLens(e); });
-    img.mousemove(function(e) { moveLens(e); });
-    lens.on('touchmove', function() { moveLens(); })
-    img.on('touchmove', function() { moveLens(); })
-  
-    function moveLens(e) {
-      var x = e.clientX - lens.outerWidth() / 2;
-      var y = e.clientY - lens.outerHeight() / 2;
-      if ( x > img.outerWidth() + img.offset().left - lens.outerWidth() ) { x = img.outerWidth() + img.offset().left - lens.outerWidth(); }
-      if ( x < img.offset().left ) { x = img.offset().left; }
-      if ( y > img.outerHeight() + img.offset().top - lens.outerHeight() ) { y = img.outerHeight() + img.offset().top - lens.outerHeight(); }
-      if ( y < img.offset().top ) { y = img.offset().top; }
-      lens.offset({ top: y, left: x });
-      result.css('backgroundPosition', '-' + ( x - img.offset().left ) * cx  + 'px -' + ( y - img.offset().top ) * cy + 'px');
-    }
-}
-    </script>
 </body>
 
 </html>
