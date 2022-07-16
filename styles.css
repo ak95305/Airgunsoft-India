@@ -584,7 +584,7 @@ section.owl-prd-list {
     stroke: #333;
 }
 
-section.owl-prd-list .owl-nav {
+section.owl-prd-list .owl-nav, section.blogs .owl-nav {
     position: absolute;
     right: 0;
     top: -70px;
