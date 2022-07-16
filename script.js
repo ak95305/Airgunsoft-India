@@ -198,37 +198,25 @@ $(document).ready(function () {
 
 
 // Login Modal
-// var userIcon = $('.cart-profile .user-icon');
-// userIcon.on('click', () => {
-//     $.ajax({
-//         url: 'login.html',
-//         async: false,
-//         success: function (data) {
-//             $('body').prepend(data);
-//             $('html').css('overflow', 'hidden');
-//             setTimeout(() => { $('.login-modal').addClass('active'); }, 10);
-//         }
-//     });
+var userIcon = $('.cart-profile .user-icon');
+userIcon.on('click', () => {
+    $.ajax({
+        url: 'login.html',
+        async: false,
+        success: function (data) {
+            $('body').prepend(data);
+            $('html').css('overflow', 'hidden');
+            setTimeout(() => { $('.login-modal').addClass('active'); }, 10);
+        }
+    });
 
-//     var closeModalIcon = $('.close-modal');
-//     closeModalIcon[0].addEventListener('click', () => {
-//         $('.login-modal').removeClass('active');
-//         setTimeout(() => {
-//             $('.login-modal').remove();
-//             $('html').css('overflow', 'auto');
-//         }, 300);
-//     });
+    var closeModalIcon = $('.close-modal');
+    closeModalIcon[0].addEventListener('click', () => {
+        $('.login-modal').removeClass('active');
+        setTimeout(() => {
+            $('.login-modal').remove();
+            $('html').css('overflow', 'auto');
+        }, 300);
+    });
 
-//     var signLink = $('.signup-link');
-//     signLink.addEventListener('click', ()=>{
-//         $.ajax({
-//             url: 'login.html',
-//             async: false,
-//             success: function (data) {
-//                 $('body').prepend(data);
-//                 $('html').css('overflow', 'hidden');
-//                 setTimeout(() => { $('.login-modal').addClass('active'); }, 10);
-//             }
-//         });
-//     });
-// });
+});

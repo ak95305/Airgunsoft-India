@@ -469,7 +469,7 @@ input.search-term:focus-within {
 
 .hero-section {
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .social-links {
