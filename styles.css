@@ -250,7 +250,7 @@ a:active {
 
 .sub-menu-parent a:focus~.sub-menu,
 .sub-menu-parent a:focus-within~.sub-menu,
-.sub-menu-parent a:hover~.sub-menu {
+.sub-menu-parent a:hover~.sub-menu, .sub-menu:hover {
     visibility: visible;
     /* shows sub-menu */
     opacity: 1;
