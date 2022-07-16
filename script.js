@@ -187,9 +187,9 @@ blogImg.forEach((i) => {
 // Dashboard JS
 $(document).ready(function () {
     var orderBtns = $('.dashboard-navlinks .prm-btn');
-    orderBtns.each(function(){
-        $(this).on('click', ()=>{
-            $('#'+  $(this).attr('data-tab-target')).click();
+    orderBtns.each(function () {
+        $(this).on('click', () => {
+            $('#' + $(this).attr('data-tab-target')).click();
         })
     })
 })
@@ -197,23 +197,38 @@ $(document).ready(function () {
 
 
 
-// // Login Modal
+// Login Modal
 // var userIcon = $('.cart-profile .user-icon');
-// userIcon.on('click', ()=>{
+// userIcon.on('click', () => {
 //     $.ajax({
 //         url: 'login.html',
-//         success: function(data) {
-//           $('body').prepend(data);
+//         async: false,
+//         success: function (data) {
+//             $('body').prepend(data);
+//             $('html').css('overflow', 'hidden');
+//             setTimeout(() => { $('.login-modal').addClass('active'); }, 10);
 //         }
 //     });
-// });
 
+//     var closeModalIcon = $('.close-modal');
+//     closeModalIcon[0].addEventListener('click', () => {
+//         $('.login-modal').removeClass('active');
+//         setTimeout(() => {
+//             $('.login-modal').remove();
+//             $('html').css('overflow', 'auto');
+//         }, 300);
+//     });
 
-
-// $.ajax({
-//   url: 'login.html',
-//   success: function(data) {
-//     $('body').prepend(data);
-//     $bo
-//   }
+//     var signLink = $('.signup-link');
+//     signLink.addEventListener('click', ()=>{
+//         $.ajax({
+//             url: 'login.html',
+//             async: false,
+//             success: function (data) {
+//                 $('body').prepend(data);
+//                 $('html').css('overflow', 'hidden');
+//                 setTimeout(() => { $('.login-modal').addClass('active'); }, 10);
+//             }
+//         });
+//     });
 // });

@@ -25,7 +25,9 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
-.form-select:focus, .form-control:focus {
+
+.form-select:focus,
+.form-control:focus {
     border-color: unset;
     outline: 0;
     box-shadow: unset;
@@ -242,7 +244,7 @@ a:active {
     left: 0;
     width: 100%;
     transform: translateY(-2em);
-    z-index: 0;
+    z-index: 2;
     transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
@@ -436,7 +438,7 @@ input.search-term:focus-within {
     font-size: 12px;
     display: block;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .lwr-nav ul li a:hover {
@@ -1713,15 +1715,18 @@ section.checkout .order-sum ul li {
     font-size: 12px;
     font-weight: 500;
 }
-.checkout-price .key.sum ~ .value{
+
+.checkout-price .key.sum~.value {
     color: var(--primary);
     font-size: 20px;
 }
+
 .checkout-price .key.prod-name {
     font-weight: 500;
     font-size: 12px;
     max-width: 200px;
 }
+
 /*===================================== Checkout Page Ends =====================================*/
 
 
@@ -1729,27 +1734,356 @@ section.checkout .order-sum ul li {
 
 /*===================================== Search Page Starts =====================================*/
 
-section.search-sec{
+section.search-sec {
     padding: 50px 0;
     font-family: 'Montserrat';
 }
+
 .search-res-head .search-filter {
     max-width: 500px;
     margin: 20px 0;
 }
-.active>.page-link, .page-link.active{
+
+.active>.page-link,
+.page-link.active {
     background: var(--primary);
     border-color: var(--primary);
 }
-.page-link{
+
+.page-link {
     color: #333;
 }
-.page-link.next, .page-link.previous{
+
+.page-link.next,
+.page-link.previous {
     color: var(--primary);
 }
+
 /*===================================== Search Page Ends =====================================*/
 
 
+
+
+
+/*===================================== Login Page Ends =====================================*/
+
+.login-modal,
+.signup-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d6;
+    z-index: 9999;
+    font-family: 'Montserrat';
+    transition: all linear .3s;
+}
+
+.modal-inner {
+    position: absolute;
+    transition: all linear .3s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    max-width: 800px;
+    width: 800px;
+    border-radius: 3px;
+}
+
+.modal-inner .login-modal-content,
+.modal-inner .signup-modal-content {
+    display: flex;
+}
+
+.login-modal-content .modal-right,
+.signup-modal-content .modal-left {
+    flex-basis: 35%;
+}
+
+.login-modal-content .modal-left,
+.signup-modal-content .modal-right {
+    padding: 50px;
+    flex-basis: 65%;
+}
+
+.modal-right h1 {
+    font-size: 20px;
+}
+
+.modal-right p {
+    font-size: 14px;
+}
+
+.modal-left h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.modal-left p {
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.modal-input {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.modal-input label {
+    display: block;
+    font-weight: 500;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+
+.modal-input input {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+.modal-act-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-img {
+    width: 100%;
+    height: 100%;
+    background: url(assets/login-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    fill: #fff;
+}
+
+.signup-modal .close-modal {
+    fill: #333;
+}
+
+/*===================================== Login Page Ends =====================================*/
+
+
+
+
+/*===================================== Order Confirmation Page Ends =====================================*/
+.order-con-sec {
+    padding: 50px 0;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.confirm-img {
+    width: fit-content;
+    padding: 40px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin: 0 auto 26px auto;
+}
+
+.order-con-box h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.order-con-box h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.order-con-box p {
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.order-con-box p {
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.order-con-box a {
+    margin: auto;
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 18px;
+}
+
+.confirm-img svg {
+    width: 60px;
+    fill: #fff;
+}
+
+/*===================================== Order Confirmation Page Ends =====================================*/
+
+
+
+
+
+/*===================================== FAQs Page Starts =====================================*/
+
+.faq-section {
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding: 10vh 0 0;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: var(--primary);
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+/*===================================== FAQs Page Ends =====================================*/
+
+
+
+
+
+
+.ess-pages{
+    padding: 50px 0;
+    font-family: 'Montserrat';
+}
+.ess-pages h1 {
+    font-weight: 700;
+    color: #333;
+}
+.ess-pages h2 {
+    margin: 0;
+    border-bottom: 3px solid var(--primary);
+    margin-top: 24px;
+}
+.ess-pages h3{
+    font-weight: 600;
+}
+.ess-pages p{
+    color: #666;
+}
 
 
 /* FOOTER STARTS */
@@ -1915,6 +2249,16 @@ footer .social-icons>a {
     .cat-card {
         height: 220px;
     }
+
+    .login-modal,
+    .signup-modal {
+        padding: 0 20px;
+    }
+
+    .modal-inner {
+        max-width: 700px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1955,6 +2299,57 @@ footer .social-icons>a {
     .item-img {
         min-width: 80px;
         max-width: 80px;
+    }
+
+    .login-modal-content .modal-right,
+    .signup-modal-content .modal-left {
+        display: none;
+    }
+
+    .login-modal-content .modal-left,
+    .signup-modal-content .modal-right {
+        padding: 50px;
+        flex-basis: 100%;
+    }
+
+    .close-modal {
+        fill: #333;
+    }
+
+    .modal-inner {
+        padding: 0 20px;
+        background-color: unset;
+    }
+
+    .modal-inner .login-modal-content,
+    .modal-inner .signup-modal-content {
+        background-color: #fff;
+        position: relative;
+    }
+    .confirm-img {
+        padding: 30px;
+    }
+
+    .order-con-box h1 {
+        font-size: 25px;
+    }
+
+    .order-con-box h3 {
+        font-size: 20px;
+    }
+
+    .order-con-box p {
+        font-size: 14px;
+    }
+
+    .order-con-box a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .confirm-img svg {
+        width: 40px;
+        fill: #fff;
     }
 }
 
@@ -2006,6 +2401,11 @@ footer .social-icons>a {
         height: 25px;
         font-size: 16px;
     }
+
+    .login-modal-content .modal-left,
+    .signup-modal-content .modal-right {
+        padding: 40px 25px;
+    }
 }
 
 @media only screen and (max-width: 475px) {
@@ -2015,5 +2415,10 @@ footer .social-icons>a {
 
     .mobile-nav .search-bar {
         display: flex;
+    }
+
+    .signup-modal .modal-inner {
+        transform: translate(-50%, 0);
+        top: 50px;
     }
 }
